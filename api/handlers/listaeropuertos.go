@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"backend/models"
-	"backend/utils"
+	"backend/api/models"
+	"backend/api/utils"
 	"encoding/json"
 	"log"
 	"net/http"

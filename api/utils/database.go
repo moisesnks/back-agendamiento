@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"backend/config"
+	"backend/api/config"
 	"database/sql"
 	"fmt"
 

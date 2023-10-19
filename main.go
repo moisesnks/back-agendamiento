@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"backend/routes"
+	"backend/api/routes"
 
 	"github.com/gorilla/mux"
 )
@@ -17,5 +17,7 @@ func main() {
 	routes.ConfigureRoutes(r)
 
 	// Configurar el servidor web para escuchar en el puerto 8080
-	log.Fatal(http.ListenAndServe(":9090", r))
+	port := ":9090"
+	log.Printf("Server is ready! Listening on %s", port)
+	log.Fatal(http.ListenAndServe(port, r))
 }

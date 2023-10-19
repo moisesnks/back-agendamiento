@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"backend/models"
-	"backend/utils"
+	"backend/api/models"
+	"backend/api/utils"
 )
 
 func ObtenerPaquetes(w http.ResponseWriter, r *http.Request) {
